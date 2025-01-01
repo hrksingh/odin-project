@@ -1,0 +1,31 @@
+.bold {
+  font-weight: bolder;
+}
+
+.small-font {
+  font-size: 10px;
+}
+
+.large-font {
+  font-size: 30px;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.white-button {
+  background-color: white;
+  color: black;
+}
+
+.green-button {
+  background-color: green;
+  color: white;
+}
+
+div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}

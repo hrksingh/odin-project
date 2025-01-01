@@ -1,0 +1,35 @@
+div {
+  font-size: 1.3rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.one {
+  background-color: lightblue;
+  font-weight: bold;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.two {
+  background-color: lightblue;
+  font-size: 1.3rem;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.three {
+  background-color: lightblue;
+  padding: 10px 200px;
+}
+
+.three p {
+  margin: 0px;
+  padding-left: 60px;
+}
+
+.three button {
+  padding: 10px 45px;
+  font-size: large;
+  border: 1px solid #eee;
+}
