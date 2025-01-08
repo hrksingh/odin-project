@@ -65,7 +65,7 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach((button) => {
   //   button.addEventListener("dblclick", (e) => {
-  //     e.target.style.background = "pink";
+  //     e.target.style.background = "yellow";
   //   });
 
   button.addEventListener("click", () => {
