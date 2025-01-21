@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .form div {
+        margin-bottom: 1rem; /* Adds spacing between fields */
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://httpbin.org/post" method="post" class="form">
+      <fieldset>
+        <legend>Contact Details</legend>
+        <div>
+          <label for="user_email">Email Address:</label>
+          <input
+            type="email"
+            name="email"
+            id="user_email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="user_password">Password:</label>
+          <input type="password" id="user_password" name="password" required />
+        </div>
+
+        <div>
+          <label for="phone_number">Phone Number:</label>
+          <input type="tel" id="phone_number" name="phone_number" />
+        </div>
+
+        <div>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Demo of fieldset with legend</legend>
+        <div>
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" name="amount" />
+        </div>
+        <div>
+          <label for="comment">Comment: </label>
+          <textarea
+            name="textarea"
+            id="comment"
+            cols="30"
+            rows="3"
+            placeholder="user comment...."
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Selections</legend>
+        <div>
+          <label for="car">Select Fav Car: </label>
+          <select name="car" id="car">
+            <option value="mercedes">Mercedes</option>
+            <option value="tesla">Tesla</option>
+            <option value="volvo">volvo</option>
+            <option value="bmw">BMW</option>
+            <option value="mini">Mini</option>
+            <option value="ford">Ford</option>
+          </select>
+        </div>
+        <div>
+          <h4>Ticket Type:</h4>
+          <div>
+            <input type="radio" id="child" name="ticket_type" value="child" />
+            <label for="child">Child</label>
+          </div>
+          <div>
+            <span style="accent-color: green">
+              <input
+                type="radio"
+                id="adult"
+                name="ticket_type"
+                value="adult"
+                checked
+              />
+            </span>
+
+            <label for="adult">Adult</label>
+          </div>
+          <div>
+            <input type="radio" id="senior" name="ticket_type" value="senior" />
+            <label for="senior">Senior</label>
+          </div>
+        </div>
+
+        <div>
+          <h4>Pizza Toppings:</h4>
+          <div>
+            <input
+              type="checkbox"
+              id="sausage"
+              name="topping"
+              value="sausage"
+            />
+            <label for="sausage">Sausage</label>
+          </div>
+          <div>
+            <input type="checkbox" id="onions" name="topping" value="onion" />
+            <label for="onions">Onions</label>
+          </div>
+          <span style="accent-color: red">
+            <div>
+              <input
+                type="checkbox"
+                id="pepperoni"
+                name="topping"
+                value="pepperoni"
+              />
+              <label for="pepperoni">Pepperoni</label>
+            </div>
+          </span>
+          <div>
+            <input
+              type="checkbox"
+              id="mushrooms"
+              name="topping"
+              value="mushrooms"
+            />
+            <label for="mushrooms">Mushrooms</label>
+          </div>
+        </div>
+        <fieldset>
+          <legend>What would you like to drink?</legend>
+
+          <span style="accent-color: red">
+            <div>
+              <input type="radio" name="drink" id="coffee" value="coffee" />
+              <label for="coffee">Coffee</label>
+            </div>
+            <div>
+              <input type="radio" name="drink" id="tea" value="tea" />
+              <label for="tea">Tea</label>
+            </div>
+            <div>
+              <input type="radio" name="drink" id="soda" value="soda" />
+              <label for="soda">Soda</label>
+            </div>
+          </span>
+        </fieldset>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
